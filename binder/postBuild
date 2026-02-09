@@ -9,3 +9,7 @@ vep_install -a cf -s homo_sapiens -y GRCh38 -c /GRCh38/vep --CONVERT
 # note that vep_install is renamed from INSTALL.pl to avoid having generic script names in the PATH
 # The --CONVERT flag is not required but improves lookup speeds during runs.
 # See the VEP documentation for more details
+
+
+# vardict pour variant calling somatique faible MAF
+mamba install vardict
