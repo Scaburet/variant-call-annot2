@@ -59,4 +59,3 @@ dependencies:
   - perl-archive-zip
   - perl-json
   - ensembl-vep
-  - perl-vardict
