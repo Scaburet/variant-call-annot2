@@ -4,7 +4,7 @@
 # The VEP package installs only the variant effect predictor (VEP) library code.
 # install the the VEP library for human GRCh38 to a directory created in the env
 
-vep_install -a cf -s homo_sapiens -y GRCh38 -c /GRCh38/vep --CONVERT
+perl vep_install -a cf -s homo_sapiens -y GRCh38 -c /GRCh38/vep --CONVERT
 
 # note that vep_install is renamed from INSTALL.pl to avoid having generic script names in the PATH
 # The --CONVERT flag is not required but improves lookup speeds during runs.
@@ -12,4 +12,4 @@ vep_install -a cf -s homo_sapiens -y GRCh38 -c /GRCh38/vep --CONVERT
 
 
 # vardict pour variant calling somatique faible MAF
-mamba install vardict
+mamba install bioconda::vardict
